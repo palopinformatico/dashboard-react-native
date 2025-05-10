@@ -1,9 +1,12 @@
 {
+  "homepage": "https://palopinformatico.github.io/dashboard-react-native",
   "name": "dashboard-app",
   "main": "expo-router/entry",
   "version": "1.0.0",
   "scripts": {
     "start": "expo start",
+    "predeploy": "npx expo export --platform web",
+    "deploy": "gh-pages -d dist",
     "reset-project": "node ./scripts/reset-project.js",
     "android": "expo start --android",
     "ios": "expo start --ios",
